@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.gdc.mapper.UserMapper">
+
+	<resultMap type="User" id="UserResult">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="password" column="password" />
+		<collection property="books" resultMap="BookResult" />
+	</resultMap>
+
+	<resultMap type="Book" id="BookResult">
+		<id property="id" column="bookid" />
+		<result property="name" column="bookname" />
+		<result property="price" column="price" />
+	</resultMap>
+
+
+	<select id="getUserById" resultMap="UserResult" 
+		parameterType="int">
+		select user.*, book.id as bookid, book.name as bookname,
+		book.price from user, book where user.id = #{id} and book.user_id =
+		user.id
+	</select> 
+
+
+
+</mapper>
