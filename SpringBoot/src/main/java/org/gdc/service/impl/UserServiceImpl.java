@@ -1,6 +1,7 @@
 package org.gdc.service.impl;
 
 import org.gdc.datasource.TargetDataSource;
+import org.gdc.log.SystemServiceLog;
 import org.gdc.mapper.UserMapper;
 import org.gdc.model.Test;
 import org.gdc.model.User;
@@ -15,6 +16,7 @@ public class UserServiceImpl implements UserService{
 	private UserMapper mapper;
 	
 	@Override
+	@SystemServiceLog(description = "查询数据")
 	public User getUserById(int id) {
 		
 		return mapper.getUserById(id);

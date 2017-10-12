@@ -1,5 +1,6 @@
 package org.gdc.controller;
 
+import org.gdc.log.SystemServiceLog;
 import org.gdc.model.Test;
 import org.gdc.model.User;
 import org.gdc.service.UserService;
@@ -31,6 +32,7 @@ public class UserController {
 	}
 	
 	@RequestMapping("/get/ds1")
+	@SystemServiceLog(description = "ds1数据源请求")
 	public Object getUserDs1() {
 		User user = userService.getUserByIdds1(1);
 
