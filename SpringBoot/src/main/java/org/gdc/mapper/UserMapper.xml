@@ -19,13 +19,21 @@
 	</resultMap>
 
 
-	<select id="getUserById" resultMap="UserResult" 
+	<select id="getUserById" resultMap="UserResult" parameterType="int">
+		select * from user where id = #{id}
+	</select>
+
+	<select id="getUserAndBooksById" resultMap="UserResult"
 		parameterType="int">
 		select user.*, book.id as bookid, book.name as bookname,
 		book.price from user, book where user.id = #{id} and book.user_id =
 		user.id
-	</select> 
+	</select>
 
 
+	<select id="getTestById" resultType="Test" parameterType="int">
+		select
+		* from test where id = #{id}
+	</select>
 
 </mapper>

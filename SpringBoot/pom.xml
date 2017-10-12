@@ -34,6 +34,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- aop -->
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-aop</artifactId>
+    		<version>1.5.2.RELEASE</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -48,12 +55,13 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<dependency>
+<!-- 		<dependency>
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
 			<version>1.0</version>
-		</dependency>
+		</dependency> -->
 
+		
 
 	</dependencies>
 
