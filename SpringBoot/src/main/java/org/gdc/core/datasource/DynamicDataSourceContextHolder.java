@@ -1,4 +1,4 @@
-package org.gdc.datasource;
+package org.gdc.core.datasource;
 
 import java.util.ArrayList;
 import java.util.List;

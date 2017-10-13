@@ -1,7 +1,7 @@
 package org.gdc.service.impl;
 
-import org.gdc.datasource.TargetDataSource;
-import org.gdc.log.SystemServiceLog;
+import org.gdc.core.log.SystemServiceLog;
+import org.gdc.core.datasource.TargetDataSource;
 import org.gdc.mapper.UserMapper;
 import org.gdc.model.Test;
 import org.gdc.model.User;

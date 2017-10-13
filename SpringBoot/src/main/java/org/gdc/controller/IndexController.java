@@ -1,6 +1,6 @@
 package org.gdc.controller;
 
-import org.gdc.datasource.DynamicDataSourceRegister;
+import org.gdc.core.datasource.DynamicDataSourceRegister;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

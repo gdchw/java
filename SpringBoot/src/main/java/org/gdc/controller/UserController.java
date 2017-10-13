@@ -1,6 +1,6 @@
 package org.gdc.controller;
 
-import org.gdc.log.SystemServiceLog;
+import org.gdc.core.log.SystemServiceLog;
 import org.gdc.model.Test;
 import org.gdc.model.User;
 import org.gdc.service.UserService;

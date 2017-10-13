@@ -1,4 +1,4 @@
-package org.gdc.datasource;
+package org.gdc.core.datasource;
 
 import java.util.HashMap;
 import java.util.Map;

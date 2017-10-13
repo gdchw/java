@@ -1,4 +1,4 @@
-package org.gdc.log;
+package org.gdc.core.log;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;

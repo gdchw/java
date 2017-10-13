@@ -1,4 +1,4 @@
-package org.gdc.datasource;
+package org.gdc.core.datasource;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;

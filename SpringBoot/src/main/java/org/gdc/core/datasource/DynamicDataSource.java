@@ -1,4 +1,4 @@
-package org.gdc.datasource;
+package org.gdc.core.datasource;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 

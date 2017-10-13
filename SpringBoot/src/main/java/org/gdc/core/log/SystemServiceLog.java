@@ -1,4 +1,4 @@
-package org.gdc.datasource;
+package org.gdc.core.log;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -7,16 +7,15 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 在方法上使用, 用于指定使用哪个数据源
+ * 自定义注解 拦截service
  * 
  * @author Administrator
  *
  */
-
-@Target({ElementType.METHOD, ElementType.TYPE})
+@Target({ElementType.PARAMETER, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface TargetDataSource {
+public @interface SystemServiceLog {
 
-	String name();
+	String description() default "";
 }
